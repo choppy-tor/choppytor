@@ -4,13 +4,14 @@ Voice over Internet Protocol (VoIP) enables voice communication over IP networks
 This study takes a fresh look at the feasibility of VoIP over Tor by analyzing call quality metrics, including Perceptual Evaluation of Speech Quality (PESQ) and One-Way Delay (OWD). Our findings reveal a significant decline in call quality, with only 16\% of calls achieving acceptable PESQ scores(>3.0) compared to 85% in prior studies. A detailed analysis highlights jitter as a potential factor in degraded call quality, with many calls exceeding acceptable thresholds. Additionally, we evaluate performance across codecs, geographic locations, and 2-hop Tor circuits, providing a comprehensive perspective. This work challenges earlier claims and underscores the limitations of VoIP over Tor in the current network conditions.
 
 ## Directory structure
+The sample directory contains sample outputs of network traces and recorded audio. To calculate the jitter of the call received at the caller side, use caller.pcap, and vice versa.
 
-The directroy "sample" contains sample outputs of network traces and recorded audio. Note that, for calculating the jitter of the call received at the caller side, use caller.pcap and vice-versa.
+The scripts directory includes the scripts used for data collection.
 
-The directory "scripts" contains the scripts used for data collection.
+Original_audio.wav is the audio file used to initiate the calls from both sides.
 
-"Original_audio.wav" is the audio played for placing the calls from both the sides.
+client.ovpn provides a sample OpenVPN configuration file.
 
-"client.ovpn" contains a sample openvpn configuration file.
+pesq is the binary used for calculating PESQ scores.
 
-"pesq" is the binary file for calculating the PESQ scores.
+All cloud-hosted machines referenced in this dataset have been shut down and terminated.
