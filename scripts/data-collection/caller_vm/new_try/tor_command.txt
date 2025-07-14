@@ -1,0 +1,16 @@
+apt purge tor &&
+apt install zlib1g-dev libssl-dev libevent-dev nyx &&
+mkdir ~/tor &&
+cd ~/tor &&
+wget https://dist.torproject.org/tor-0.4.8.14.tar.gz &&
+tar -zxvf tor-0.4.8.14.tar.gz &&
+cd ~/tor/tor-0.4.8.14/src/core/or &&
+vim or.h &&
+
+<DEFAULT_ROUTE_LEN> &&
+
+./configure &&
+make &&
+make install &&
+rm /usr/local/etc/tor/torrc.sample &&
+echo -e "ControlPort 9051\nCookieAuthentication 0" > /usr/local/etc/tor/torrc

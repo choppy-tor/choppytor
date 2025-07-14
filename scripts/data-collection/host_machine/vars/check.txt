@@ -1,0 +1,85 @@
+Processing VM: 104.248.143.199
+Connection to 104.248.143.199 closed by remote host.
+Connection to 104.248.143.199 closed.
+[*]Rebooted machine : 104.248.143.199
+Processing VM: 170.64.217.19
+Connection to 170.64.217.19 closed by remote host.
+Connection to 170.64.217.19 closed.
+[*]Rebooted machine : 170.64.217.19
+Processing VM: 159.89.164.103
+Connection to 159.89.164.103 closed by remote host.
+Connection to 159.89.164.103 closed.
+[*]Rebooted machine : 159.89.164.103
+Processing VM: 157.245.193.205
+Connection to 157.245.193.205 closed by remote host.
+Connection to 157.245.193.205 closed.
+[*]Rebooted machine : 157.245.193.205
+Processing VM: 143.244.176.174
+Connection to 143.244.176.174 closed by remote host.
+Connection to 143.244.176.174 closed.
+[*]Rebooted machine : 143.244.176.174
+Processing VM: 107.170.14.165
+Connection to 107.170.14.165 closed by remote host.
+Connection to 107.170.14.165 closed.
+[*]Rebooted machine : 107.170.14.165
+Processing VM: 13.246.131.104
+Connection to 13.246.131.104 closed by remote host.
+Connection to 13.246.131.104 closed.
+[***]Failed reboot 13.246.131.104
+Processing VM: 16.78.220.70
+Connection to 16.78.220.70 closed by remote host.
+Connection to 16.78.220.70 closed.
+[***]Failed reboot 16.78.220.70
+Processing VM: 13.208.174.172
+Connection to 13.208.174.172 closed.
+[*]Rebooted machine : 13.208.174.172
+Processing VM: 15.228.228.58
+Connection to 15.228.228.58 closed.
+[*]Rebooted machine : 15.228.228.58
+Processing VM: 51.17.159.192
+Connection to 51.17.159.192 closed by remote host.
+Connection to 51.17.159.192 closed.
+[***]Failed reboot 51.17.159.192
+Processing VM: 165.232.47.42
+Connection to 165.232.47.42 closed.
+[*]Rebooted machine : 165.232.47.42
+Processing VM: 165.227.163.156
+Connection to 165.227.163.156 closed by remote host.
+Connection to 165.227.163.156 closed.
+[*]Rebooted machine : 165.227.163.156
+Processing VM: 162.243.40.228
+Connection to 162.243.40.228 closed.
+[*]Rebooted machine : 162.243.40.228
+Processing VM: 134.122.46.221
+Connection to 134.122.46.221 closed by remote host.
+Connection to 134.122.46.221 closed.
+[*]Rebooted machine : 134.122.46.221
+Processing VM: 188.166.42.110
+Connection to 188.166.42.110 closed by remote host.
+Connection to 188.166.42.110 closed.
+[*]Rebooted machine : 188.166.42.110
+Processing VM: 209.38.87.162
+Connection to 209.38.87.162 closed by remote host.
+Connection to 209.38.87.162 closed.
+[*]Rebooted machine : 209.38.87.162
+Processing VM: 3.38.182.126
+Connection to 3.38.182.126 closed by remote host.
+Connection to 3.38.182.126 closed.
+[*]Rebooted machine : 3.38.182.126
+Processing VM: 78.12.113.236
+Connection to 78.12.113.236 closed by remote host.
+Connection to 78.12.113.236 closed.
+[***]Failed reboot 78.12.113.236
+Processing VM: 3.28.252.237
+Connection to 3.28.252.237 closed by remote host.
+Connection to 3.28.252.237 closed.
+[***]Failed reboot 3.28.252.237
+Processing VM: 43.216.119.204
+Connection to 43.216.119.204 closed by remote host.
+Connection to 43.216.119.204 closed.
+[***]Failed reboot 43.216.119.204
+Processing VM: 209.38.25.253
+Connection to 209.38.25.253 closed by remote host.
+Connection to 209.38.25.253 closed.
+[*]Rebooted machine : 209.38.25.253
+All VMs processed. Check tmux sessions on each VM for progress.
