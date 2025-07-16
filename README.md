@@ -12,6 +12,8 @@ Original_audio.wav is the audio file used to initiate the calls from both sides.
 
 client.ovpn provides a sample OpenVPN configuration file.
 
+server.conf provides a sample OpenVPN server configuration file.
+
 pesq is the binary used for calculating PESQ scores.
 
 All cloud-hosted machines referenced in this dataset have been shut down and terminated.
