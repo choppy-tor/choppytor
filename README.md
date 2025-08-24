@@ -35,6 +35,3 @@ Callee:
 ```bash
 python callee.py 10.8.0.1 9001 1008 1234 30 8000 Julius2.wav recording_
 ```
-## License
-
-This project is licensed under the XYZ License - see the [LICENSE.md](./LICENSE.md) file for details (if you have one).
