@@ -7,13 +7,17 @@ This study takes a fresh look at the feasibility of VoIP over Tor by analyzing c
 
 ## 1. Data
 Our data contains two directories.
-- *Sample Raw Data*: The directory contains raw data of the network traces in PCAP format and the recorded audio files in wav format. Please note that we have provided only some sample data due to storage restrictions.
-- *Extracted Data*: The directory contains the extratced data from the PCAPs and the recorded audio files in CSV format. The files contains the follwing fields:
+- **Sample Raw Data**: The directory contains raw data of the network traces in PCAP format and the recorded audio files in wav format. Please note that we have provided only some sample data due to storage restrictions.
+
+- **Extracted Data**: The directory contains the extratced data from the PCAPs and the recorded audio files in CSV format. The files contains the follwing fields:
     1. Tor status: Whether the call is directed through Tor or not.
     2. Codec: Codec used for placing the calls.
     3. PESQ RAW: Direct output of the PESQ algorithm before any mapping or calibration. Available for caller and callee recordings.
     4. PESQ MOS: This is the mapped version of the scores MOS-LQO (Listening Quality Objective) so that results better correlate with human Mean Opinion Scores from listening experiments. We used this metric for the ananlysis. Available for both caller and callee recordings.
     5. Jitter Statistics: Various statistical values of caller and callee side jitter values are included. This includes mean, median, maximum, range(max-min), Inter-Quartile-Range(IQR) and the standard deviations of the jitter values of individual call.
+
+- **Sample-VPN-Config-FIles**: The directroy contains sample VPN configuration files to connect to the VoIP/VPN server for placing the VoIP calls. The callee is co-located with the VoIP server.
+
 
 ## 2. System Set up and Data Collection
 
