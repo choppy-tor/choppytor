@@ -24,7 +24,7 @@ Our data contains two directories.
 - **VoIP Server**: FreeSWITCH based VoIP server that handles all VoIP-related functionalities. [Seting up VoIP server](./readme/VoIP-server.md).
 - **VoIP Client**: Placing the VoIP calls using the clients  [Seting up VoIP clients](./readme/VoIP-client.md).
 
-Once the VoIP clients are setup, one would act as call initiator(caller) and the other one as receiver(callee). The scripts for placing the calls are present under the directory [DataCollection](./scripts). The follwoign commands can be used to place the calls:
+Once the VoIP clients are setup, one would act as call initiator(caller) and the other one as receiver(callee). The scripts for placing the calls are present under the directory [scripts](./scripts). The follwoign commands can be used to place the calls:
 
 Caller: 
 ```bash
