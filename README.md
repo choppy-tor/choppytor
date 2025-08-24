@@ -24,7 +24,7 @@ Our data contains two directories.
 - **VoIP Server**: FreeSWITCH based VoIP server that handles all VoIP-related functionalities. [Seting up VoIP server](./readme/VoIP-server.md).
 - **VoIP Client**: Placing the VoIP calls using the clients  [Seting up VoIP clients](./readme/VoIP-client.md).
 
-Once the VoIP clients are setup, one would act as call initiator(caller) and the other one as receiver(callee). The scripts for placing the calls are present under the directory [DataCollection](./DataCollection). The follwoign commands can be used to place the calls:
+Once the VoIP clients are setup, one would act as call initiator(caller) and the other one as receiver(callee). The scripts for placing the calls are present under the directory [DataCollection](./scripts). The follwoign commands can be used to place the calls:
 
 Caller: 
 ```bash
@@ -35,10 +35,6 @@ Callee:
 ```bash
 python callee.py 10.8.0.1 9001 1008 1234 30 8000 Julius2.wav recording_
 ```
-
-1. Calculate the PESQ scores using the script "test_pesq.py" under the directory [PESQ_check](PESQ_check). Make sure you provide the correct reference audio sample.
-2. Plot the scores using "PESQ_plot.ipynb"
-
 ## License
 
 This project is licensed under the XYZ License - see the [LICENSE.md](./LICENSE.md) file for details (if you have one).

@@ -1,0 +1,5 @@
+REFERENCE	 DEGRADED	 PESQMOS	 MOSLQO	 SAMPLE_FREQ	 MODE
+Original_audio.wav	 callee_recording_0_temp.wav	 3.205	 3.128	 8000	nb
+Original_audio.wav	 callee_recording_0.wav	 3.205	 3.127	 8000	nb
+Original_audio.wav	 callee_recording_0_temp.wav	 3.205	 3.128	 8000	nb
+Original_audio.wav	 callee_recording_0_temp.wav	 3.205	 3.128	 8000	nb
