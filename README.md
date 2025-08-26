@@ -35,3 +35,13 @@ Callee:
 ```bash
 python callee.py 10.8.0.1 9001 1008 1234 30 8000 Julius2.wav recording_
 ```
+
+PESQ for a recorded audio file can be calaulated as follows:
+```bash
+./pesq +8000 <reference-file> <degraded-file>
+```
+
+To automate the data collection, use the script [automate.sh](./data-collection-scripts/automate/automate.sh)
+```bash
+./automate.sh <number of iterations> <path to OVPN file> <path to Python script to get GUARD IP> <capture_filename_variable> <CALLER_SCRIPT> <TUNNEL_IP> <path to Python script to get MIDDLE IP> <path to Python script to get EXIT IP><Complete node file>
+```
