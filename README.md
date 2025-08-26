@@ -24,7 +24,7 @@ Our data contains two directories.
 - **VoIP Server**: FreeSWITCH based VoIP server that handles all VoIP-related functionalities. [Seting up VoIP server](./readme/VoIP-server.md).
 - **VoIP Client**: Placing the VoIP calls using the clients  [Seting up VoIP clients](./readme/VoIP-client.md).
 
-Once the VoIP clients are setup, one would act as call initiator(caller) and the other one as receiver(callee). The scripts for placing the calls are present under the directory [scripts](./scripts). The follwoign commands can be used to place the calls:
+Once the VoIP clients are setup, one would act as call initiator(caller) and the other one as receiver(callee). The scripts for placing the calls are present under the directory [scripts](./data-collection-scripts). The follwoign commands can be used to place the calls:
 
 Caller: 
 ```bash
@@ -41,7 +41,7 @@ PESQ for a recorded audio file can be calaulated as follows:
 ./pesq +8000 <reference-file> <degraded-file>
 ```
 
-To automate the data collection, use the script [automate.sh](./data-collection-scripts/automate/automate.sh)
+To automate the data collection, use the script [automate.sh](./data-collection-scripts/automate/automate.sh). All required scripts are provided in the same directory.
 ```bash
 ./automate.sh <number of iterations> <path to OVPN file> <path to Python script to get GUARD IP> <capture_filename_variable> <CALLER_SCRIPT> <TUNNEL_IP> <path to Python script to get MIDDLE IP> <path to Python script to get EXIT IP><Complete node file>
 ```
