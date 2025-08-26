@@ -1,0 +1,17 @@
+Location,Samples,% > 3.0,Avg PESQ,Min,Max
+Bangalore - New York,5766,21.35,2.47,0.00,4.49
+Cape Town - Seoul,2982,5.94,1.71,0.00,4.43
+Frankfurt - London,5992,25.25,2.53,0.00,4.42
+Jakarta - Mexico,3618,22.31,2.47,0.00,4.46
+New York - Sydney,2992,14.94,2.26,0.00,4.46
+Oregon - California,2400,4.42,1.60,0.00,4.45
+Osaka - UAE,2998,11.31,2.57,1.11,3.96
+Paris - London,2790,5.38,1.65,0.00,4.33
+San Francisco - Amsterdam,6076,18.22,2.57,0.00,4.49
+Singapore - New York,5376,12.17,2.34,0.00,4.46
+Stockholm - Frankfurt,2208,3.80,1.59,0.00,4.31
+Sydney - Frankfurt,6068,15.41,2.45,0.00,4.47
+São Paulo - Malaysia,2692,29.23,2.61,0.00,4.44
+Tel Aviv - Sydney,4084,4.46,2.25,0.00,3.37
+Virginia - Ohio,596,6.38,1.62,1.11,4.29
+TOTAL,56638,15.11,2.30,0.00,4.49
