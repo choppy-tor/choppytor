@@ -9,7 +9,7 @@ This study takes a fresh look at the feasibility of VoIP over Tor by analyzing c
 Our data contains two directories.
 - **Sample Raw Data**: The directory contains raw data of the network traces in PCAP format and the recorded audio files in wav format. Please note that we have provided only some sample data due to storage restrictions.
 
-- **Extracted Data**: The directory contains the extratced data from the PCAPs and the recorded audio files in CSV format. The files contains the follwing fields:
+- **Extracted Data**: The directory contains the extratced data from the PCAPs and the recorded audio files in CSV format. Each row corresponds to a bi-directional call between caller and callee. files contains the follwing fields:
     1. Tor status: Whether the call is directed through Tor or not.
     2. Codec: Codec used for placing the calls.
     3. PESQ RAW: Direct output of the PESQ algorithm before any mapping or calibration. Available for caller and callee recordings.
