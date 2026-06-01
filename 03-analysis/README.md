@@ -82,19 +82,8 @@ This directory contains scripts for extracting jitter and delay-related metrics 
 
 The scripts process the collected network traces and derive timing metrics such as packet inter-arrival variation, jitter, and delay. These extracted metrics are used in later analysis to study the relationship between packet timing behavior and VoIP quality.
 
-## 5. Original Audio File
 
-File:
-
-```text
-Original_audio.wav
-```
-
-This is the reference audio file used for PESQ-based speech quality evaluation.
-
-The recorded audio from VoIP calls is compared against this original reference audio file to compute objective speech quality scores. The same reference file should be used consistently when reproducing PESQ measurements.
-
-## 6. PESQ Computation
+## 5. PESQ Computation
 
 Directories:
 
@@ -115,7 +104,7 @@ The general PESQ workflow is:
 4. Extract the MOS-LQO score from the PESQ output.
 5. Use the extracted scores for codec-wise, location-wise, and overall quality analysis.
 
-## 7. Throughput and One-Way Delay Analysis
+## 6. Throughput and One-Way Delay Analysis
 
 Directory:
 
@@ -164,5 +153,4 @@ The analysis scripts assume that the data collection phase has already been comp
 
 Some scripts may contain local paths specific to the original experimental environment. These paths should be updated before reproducing the analysis on another machine.
 
-Before making the repository public, remove unnecessary temporary files, large intermediate files, private paths, IP addresses, and any sensitive information.
 
