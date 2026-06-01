@@ -86,7 +86,6 @@ The overall data collection workflow is as follows:
 
 The scripts in this directory assume that the system setup, including FreeSWITCH, OpenVPN, and Tor, has already been completed.
 
-The audio samples included in this directory were used as input speech samples for the VoIP experiments. Different samples may result in different objective quality scores, depending on how each sample responds to network impairments.
+The audio samples included in this directory were used as input speech samples for the public-Tor VoIP experiments. Different samples may result in different objective quality scores, depending on how each sample responds to network impairments.
 
-Before making the repository public, remove or anonymize any machine-specific paths, IP addresses, credentials, private keys, or temporary experimental outputs.
 
