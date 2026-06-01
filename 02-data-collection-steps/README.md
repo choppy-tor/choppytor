@@ -52,7 +52,7 @@ caller/auto/
 The automation scripts were used to run multiple iterations of the experiment and reduce manual intervention during data collection.
 
 ## 2. Callee-Side Data Collection
-
+ 
 The `callee/` directory contains the scripts used on the callee side.
 
 ### 2.1 `callee.py`
@@ -81,6 +81,9 @@ The overall data collection workflow is as follows:
 6. Automation scripts repeat the process across multiple iterations.
 7. The collected recordings are processed for PESQ and related quality metrics.
 8. Tor path information is handled by the automation scripts where applicable.
+
+For Non-Tor data collection, we simply removed the SOCKS-PROXY line from OVPN the configuration file. Non-Tor VoIP calls were placed using the same setup as Tor calls and were also routed through an OpenVPN tunnel to ensure a fair comparison. The only difference was that, in the non-Tor case, the OpenVPN tunnel was not routed through the Tor SOCKS proxy.
+
 
 ## 4. Notes
 
