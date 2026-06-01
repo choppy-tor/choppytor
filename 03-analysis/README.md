@@ -78,7 +78,7 @@ Directory:
 jitter-delay-extractions/
 ```
 
-This directory contains scripts for extracting jitter and delay-related metrics from packet-level traces.
+This directory contains scripts for extracting jitter and delay-related metrics from packet-level traces. The filenames with "dynamic" is used for VBR codecs like OPUS.  
 
 The scripts process the collected network traces and derive timing metrics such as packet inter-arrival variation, jitter, and delay. These extracted metrics are used in later analysis to study the relationship between packet timing behavior and VoIP quality.
 
@@ -98,9 +98,9 @@ Depending on the local setup, these directories may contain PESQ binaries, wrapp
 
 The general PESQ workflow is:
 
-1. Use `Original_audio.wav` as the reference audio.
+1. Use  the reference audio.
 2. Use the recorded VoIP call audio as the degraded audio.
-3. Run PESQ to compare the degraded recording against the reference.
+3. Run PESQ to compare the degraded recording against the reference. (./pesq +8000 reference.wav recorded.wav)
 4. Extract the MOS-LQO score from the PESQ output.
 5. Use the extracted scores for codec-wise, location-wise, and overall quality analysis.
 
@@ -127,25 +127,8 @@ The analysis scripts may require one or more of the following inputs:
 * PESQ output files,
 * jitter and delay metric files,
 * throughput measurement files,
-* caller/callee metadata,
-* codec labels,
-* location-pair labels.
 
 The required input paths may vary across scripts. Update any machine-specific paths before running the scripts in a new environment.
-
-## Expected Outputs
-
-The scripts in this directory may generate:
-
-* PESQ/MOS-LQO score files,
-* jitter summary files,
-* delay summary files,
-* throughput summary files,
-* codec-wise comparison plots,
-* location-wise comparison plots,
-* CDF plots,
-* tables used in the paper,
-* intermediate CSV files.
 
 ## Notes
 
