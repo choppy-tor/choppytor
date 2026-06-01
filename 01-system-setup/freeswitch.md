@@ -127,3 +127,7 @@ sudo systemctl enable freeswitch.service
 ```bash
 fs_cli -r
 ```
+
+## Notes
+
+The IP address `10.10.200.1` corresponds to the VPN-side address used by the FreeSWITCH server in our setup. Change this value depending on your deployment environment.
