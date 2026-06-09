@@ -11,9 +11,6 @@ tor-instrumentation/
 ├── README.md
 ├── client-side.md
 ├── middle-relay.md
-├── patches/
-│   ├── client-exptag.patch
-│   └── middle-relay-exptag.patch
 └── notes.md
 ```
 
