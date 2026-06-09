@@ -267,37 +267,4 @@ The Tor client changes can be summarized as follows:
 
 These changes do not modify Tor's anonymity protocol for normal use and are intended only for controlled experimental measurements.
 
----
-
-## 13. Notes for Artifact Evaluators
-
-This instrumentation should be used only in the private Tor testbed supplied with the artifact. It is not required for public Tor measurements.
-
-The client-side tag is an experimental measurement aid. It is used to correlate application traffic with relay-side scheduler behavior and should not be interpreted as a deployable Tor protocol extension.
-
-For reproducibility, the artifact should include:
-
-```text
-tor-client/
-├── torrc
-└── README-client-instrumentation.md
-```
-
-The recommended way to inspect the changes is:
-
-```bash
-git diff tor-0.4.8.21-clean tor-0.4.8.21-instrumented
-```
-
-or, if a patch is supplied:
-
-```bash
-git apply --check patch/tor-client-exptag.patch
-git apply patch/tor-client-exptag.patch
-```
-
----
-
-## 14. Minimal README Text for the Repository
-
 The Tor client was modified to send a one-time experimental relay command on circuits used by the measurement applications. The command carries a small payload beginning with the magic string `XPTG`, followed by a traffic-type field and a tag identifier. This allows the instrumented middle relay to distinguish VoIP and web circuits. The tag is sent only once per circuit; subsequent relay-side scheduler events are associated with the traffic type by matching the logged circuit identifier. This design keeps the instrumentation lightweight and avoids injecting additional per-cell measurement traffic.
