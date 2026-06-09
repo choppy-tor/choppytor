@@ -279,9 +279,6 @@ For reproducibility, the artifact should include:
 
 ```text
 tor-client/
-├── modified-source/
-├── patch/
-│   └── tor-client-exptag.patch
 ├── torrc
 └── README-client-instrumentation.md
 ```
