@@ -10,6 +10,8 @@ The experiments used the following Tor version:
 Tor 0.4.8.21
 ```
 ## 2. Torrc 
+```text
 ControlPort 9051
 CookieAuthentication 0
 RunAsDaemon 1
+```
