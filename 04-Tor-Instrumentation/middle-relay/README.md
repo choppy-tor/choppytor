@@ -370,18 +370,12 @@ The middle-relay changes can be summarized as follows:
 
 ---
 
-## 14. Recommended Directory Structure
+## 14. Directory Structure
 
 For the artifact, the middle-relay instrumentation can be organized as:
 
 ```text
-tor-middle-relay/
-├── modified-source/
-├── patch/
-│   └── tor-middle-exptag-ewma.patch
-├── torrc-middle
-├── sample-logs/
-│   └── info.log
+middle-relay/
 └── README-middle-relay-instrumentation.md
 ```
 
