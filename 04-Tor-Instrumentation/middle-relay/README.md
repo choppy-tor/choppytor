@@ -400,31 +400,4 @@ In a private Tor network, additional options such as directory authority configu
 
 ---
 
-## 16. How to Inspect the Middle-Relay Patch
-
-If the artifact includes a clean Tor source tree and an instrumented source tree, the changes can be inspected using:
-
-```bash
-git diff tor-0.4.8.21-clean tor-0.4.8.21-middle-instrumented
-```
-
-If the artifact includes a patch:
-
-```bash
-git apply --check patch/tor-middle-exptag-ewma.patch
-git apply patch/tor-middle-exptag-ewma.patch
-```
-
-To find the instrumentation points:
-
-```bash
-grep -R "EXPTAG" -n src/
-grep -R "EWMAA" -n src/
-grep -R "exptag" -n src/
-```
-
----
-
-## 17. Minimal README Text for the Repository
-
 The middle relay was modified to receive a private experimental relay command sent by the Tor client. The command contains a payload beginning with the magic string `XPTG`, followed by a traffic type and tag identifier. When the middle relay receives this command, it marks the local circuit as VoIP or web and logs the mapping between the local circuit identifier and the traffic type. The tag is consumed locally and is not forwarded further. The relay also logs EWMA scheduler events such as circuit activation, deactivation, scheduler selection, and cell transmission. During offline analysis, the initial tag log is used to map later scheduler events to the corresponding traffic type.
